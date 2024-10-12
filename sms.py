@@ -3,16 +3,16 @@ import phonenumbers
 from twilio.rest import Client
 
 # Your Twilio account SID and authentication token
-account_sid = 'ACda67273788f52679e0c81f0a130e1391'
-auth_token = 'fade05a4a5c0934e209f1ceaa72ea02b'
+account_sid = '*************************'
+auth_token = '*************************'
 
 # Your Twilio phone number
-twilio_phone_number = '+12059418754'
+twilio_phone_number = '+1205*******'
 
 client = Client(account_sid, auth_token)
 
 # Read the CSV file with absentees' phone numbers
-with open(r"C:\Users\Ajay\OneDrive\Desktop\face-recognition-based-attendance-system-master\users.csv", newline='') as csvfile:
+with open(r"users.csv", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     
     for row in reader:
